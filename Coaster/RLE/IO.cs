@@ -84,7 +84,7 @@ namespace RLE // https://github.com/kevinburke/rct/blob/master/rle/lib.go
                     int duplicateCount = 2;
 
                     // TODO: Check logic
-                    while(ride.Length > duplicateCount && duplicateCount <= 127 && ride[current] == ride[current + duplicateCount])
+                    while(ride.Length > current + duplicateCount && duplicateCount <= 127 && ride[current] == ride[current + duplicateCount])
                     {
                         duplicateCount++;
                     }
